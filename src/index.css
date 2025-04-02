@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html,
+body,
+#root {
+	width: 100vw;
+	height: 100vh;
+}
+
+body {
+	margin: 0;
+
+	font-family: 'Roboto', monospace;
+}
+
+noscript {
+	display: grid;
+	place-items: center;
+}
+
+#root {
+	display: grid;
+	grid-template: 'screen' minmax(0, 1fr) / minmax(0, 1fr);
+
+	& > * {
+		grid-area: screen;
+	}
+}
